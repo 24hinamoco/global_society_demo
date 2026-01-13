@@ -170,4 +170,8 @@ a[href="#courses"] {
 .main-nav a {
   font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS Mincho", serif !important;
 }
+nav.main-nav a {
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif !important;
+  color: red !important;
+}
 
