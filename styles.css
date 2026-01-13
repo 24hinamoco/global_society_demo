@@ -143,3 +143,9 @@ body {
 
 /* accessibility focus */
 a:focus { outline:3px solid rgba(140,29,64,0.15); outline-offset:3px; border-radius:4px; }
+/* 目次の「コース紹介」だけ明朝体に */
+a[href="#courses"] {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS Mincho", serif;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
