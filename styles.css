@@ -166,4 +166,8 @@ a[href="#courses"] {
   font-weight: 500;
   letter-spacing: 0.08em;
 }
+/* 強制的にナビを明朝体にする（確認用） */
+.main-nav a {
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "MS Mincho", serif !important;
+}
 
