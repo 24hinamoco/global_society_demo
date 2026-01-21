@@ -174,4 +174,9 @@ nav.main-nav a {
   font-family: "Yu Mincho", "Hiragino Mincho ProN", serif !important;
   color: red !important;
 }
+/* 卒業論文 箇条書き */
+.thesis-list li {
+  color: #222;
+  line-height: 1.7;
+}
 
