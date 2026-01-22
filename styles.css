@@ -180,3 +180,91 @@ nav.main-nav a {
   line-height: 1.7;
 }
 
+/* ===== 卒業論文 ===== */
+.thesis-section {
+  background:#f6f6f3;
+}
+
+.thesis-years {
+  display:flex;
+  gap:24px;
+  margin:32px 0;
+  flex-wrap:wrap;
+}
+
+.year-label {
+  font-family:'Noto Serif JP', serif;
+  color:#222;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.year-label .year-num {
+  transition:all .3s ease;
+}
+
+.year-label.active .year-num {
+  font-size:28px;
+  font-weight:700;
+}
+
+.year-block {
+  display:none;
+}
+
+.year-block.active {
+  display:block;
+}
+
+.seminar {
+  border-bottom:1px solid #ddd;
+  padding:16px 0;
+}
+
+.seminar-toggle {
+  background:none;
+  border:none;
+  width:100%;
+  text-align:left;
+  font-family:'Noto Serif JP', serif;
+  font-size:16px;
+  color:#222;
+  cursor:pointer;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.arrow {
+  width:8px;
+  height:8px;
+  border-right:2px solid #222;
+  border-bottom:2px solid #222;
+  transform:rotate(45deg);
+  transition:.3s;
+}
+
+.seminar.open .arrow {
+  transform:rotate(-135deg);
+}
+
+.thesis-list {
+  display:none;
+  margin-top:12px;
+  padding-left:1em;
+}
+
+.seminar.open .thesis-list {
+  display:block;
+}
+
+.thesis-list li {
+  color:#222;
+  margin-bottom:8px;
+}
+
+/* スマホ */
+@media (max-width:768px){
+  .year-label {font-size:14px;}
+  .year-label.active .year-num {font-size:22px;}
+}
