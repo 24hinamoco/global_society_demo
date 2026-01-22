@@ -406,3 +406,22 @@
 
 </body>
 </html>
+// 年度切替
+document.querySelectorAll('.year-label').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.year-label').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const year = btn.dataset.year;
+    document.querySelectorAll('.year-block').forEach(block=>{
+      block.classList.toggle('active', block.dataset.year === year);
+    });
+  });
+});
+
+// ゼミ開閉
+document.querySelectorAll('.seminar-toggle').forEach(toggle=>{
+  toggle.addEventListener('click',()=>{
+    toggle.parentElement.classList.toggle('open');
+  });
+});
