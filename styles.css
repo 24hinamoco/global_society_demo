@@ -361,3 +361,7 @@ nav.main-nav a {
     font-size: 15px;
   }
 }
+/* ===== ナビ（目次）の文字色を統一 ===== */
+nav a {
+  color: #222;
+}
